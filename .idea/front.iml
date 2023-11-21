@@ -8,5 +8,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="back" />
+    <orderEntry type="library" name="telegram-web-app" level="application" />
   </component>
 </module>
