@@ -1,19 +1,20 @@
 import "./App.css";
 import { useEffect } from "react";
-const tg = window.Telegram.WebApp;
+import { Button, Typography } from "antd";
+import { useTg } from "./hooks/useTg";
+
+const { Title } = Typography;
 
 function App() {
+  const { tg, user, onClose } = useTg();
   useEffect(() => {
     tg.ready();
   }, []);
-  const handleClose = () => {
-    tg.close();
-  };
 
   return (
     <div className="App">
-      <p>Gunya</p>
-      <button onClick={handleClose}>Close</button>
+      <Title>Hello {user?.username}</Title>
+      <Button onClick={onClose}>Close</Button>
     </div>
   );
 }
