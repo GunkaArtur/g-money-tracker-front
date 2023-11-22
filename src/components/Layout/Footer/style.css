@@ -1,0 +1,10 @@
+.footer {
+    background-color: #0F0F0F;
+    display: flex;
+    justify-content: center;
+}
+.button-item {
+    color: #DDE6ED;
+    background-color: #232D3F;
+    margin: 15px;
+}

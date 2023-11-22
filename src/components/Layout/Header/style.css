@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0F0F0F;
+}
+.title-info {
+  color: #DDE6ED;
+}
+.date-block {
+  display: flex;
+  align-items: center;
+}
+.date-info {
+  margin: 0 15px;
+  color: #DDE6ED;
+}
