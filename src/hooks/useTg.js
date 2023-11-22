@@ -8,6 +8,6 @@ export function useTg() {
   return {
     tg,
     onClose,
-    user: tg.initDataUnsafe.user.username,
+    user: tg.initDataUnsafe?.user?.username,
   };
 }
