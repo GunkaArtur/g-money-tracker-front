@@ -3,5 +3,10 @@
     height: 80vh;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     background-color: #232D3F;
+}
+.center-line {
+    display: flex;
+    align-items: center;
 }

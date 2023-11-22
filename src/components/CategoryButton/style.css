@@ -1,0 +1,16 @@
+.categoryButton__contaiter {
+    display: flex;
+    justify-content: center;
+}
+.categoryButton__item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.categoryButton__item__name {
+    color: #DDE6ED;
+}
+.categoryButton__item__count {
+    color: #DDE6ED;
+}
