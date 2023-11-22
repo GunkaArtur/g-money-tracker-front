@@ -7,7 +7,7 @@ import { Content } from "./components/Layout/Content";
 import { Footer } from "./components/Layout/Footer";
 
 function App() {
-  const { tg, onClose, user } = useTg();
+  const { tg, onClose } = useTg();
 
   useEffect(() => {
     tg.ready();
