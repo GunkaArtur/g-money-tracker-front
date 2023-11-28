@@ -1,3 +1,4 @@
+// @ts-expect-error resolve here with Telegram
 const tg = window.Telegram.WebApp;
 
 export function useTg() {
