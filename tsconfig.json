@@ -6,18 +6,19 @@
     "module": "esnext",
     "target": "es6",
     "downlevelIteration": true,
-    "allowJs": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "sourceMap": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
     "sourceRoot": "src",
-    "skipLibCheck": true,
     "outDir": "lib",
     "baseUrl": ".",
     "jsx": "react-jsx",
     "noUncheckedIndexedAccess": true,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "checkJs": false,
     "paths": {
       "~/*": ["./src/*"]
     }

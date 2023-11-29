@@ -1,38 +1,30 @@
 import "./style.css";
 import { Button, Typography } from "antd";
 import { PlusOutlined } from "@ant-design/icons";
-import { AddForm } from "../AddForm";
-import { useState } from "react";
+import { FC } from "react";
 
 const { Text } = Typography;
 
-export const CategoryButton = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+export type Props = {
+  id: string;
+  name: string;
+  value: number;
+  onClick: (id: string) => void;
+};
 
-  const showModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const handleOk = () => {
-    setIsModalOpen(false);
-  };
-
-  const handleCancel = () => {
-    setIsModalOpen(false);
-  };
+export const CategoryButton: FC<Props> = ({ id, name, value, onClick }) => {
   return (
     <div className={"categoryButton__item"}>
-      <Text className={"categoryButton__item__name"}>Cars</Text>
+      <Text className={"categoryButton__item__name"}>{name}</Text>
       <Button
         className={"button-item"}
         type="primary"
         shape="circle"
         size={"large"}
         icon={<PlusOutlined />}
-        onClick={showModal}
+        onClick={() => onClick(id)}
       />
-      <Text className={"categoryButton__item__count"}>6545$</Text>
-      <AddForm open={isModalOpen} onCancel={handleCancel} onOk={handleOk} />
+      <Text className={"categoryButton__item__count"}>{value}$</Text>
     </div>
   );
 };
